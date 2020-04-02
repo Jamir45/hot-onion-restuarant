@@ -6,16 +6,21 @@ import './Breakfast.css'
 const Breakfast = () => {
 
     const [data, setData] = useState(foodData)
-    console.log(data)
+    const [cart, setCart] = useState([])
+    const cartHandler = (clickedFood) => {
+        // const food = [...cart, clickedFood]
+        // setCart(food)
+    };
     return (
         <div>
             
             <div>
                 <div className="row container">
                     {
-                        data.map( singleDat=> <BreakfastFood allSingleData={singleDat}></BreakfastFood> )
+                        data.map( (singleDat) => <BreakfastFood allSingleData={singleDat} cartHandler={cartHandler} ></BreakfastFood> )
                     }
                 </div>
+                
             </div>
             <div>
 

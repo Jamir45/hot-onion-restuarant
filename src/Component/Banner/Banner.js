@@ -21,10 +21,10 @@ const Banner = () => {
                 </div>
             </section>
             <div className="menu">
-                <Link to="/breakfast">Breakfast</Link>
-                <Link to="/lunch">Lunch</Link>
-                <Link to="/dinner">Dinner</Link>
-            </div>
+                    <Link to="/breakfast">Breakfast</Link>
+                    <Link to="/lunch">Lunch</Link>
+                    <Link to="/dinner">Dinner</Link>
+                </div>
         </div>
     );
 };

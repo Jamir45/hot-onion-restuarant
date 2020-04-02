@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -13,6 +12,7 @@ import Breakfast from './Component/Breakfast/Breakfast';
 import Lunch from './Component/Lunch/Lunch';
 import Dinner from './Component/Dinner/Dinner';
 import BreakfastDetails from './Component/BreakfastDetails/BreakfastDetails';
+import DinnerDetails from './Component/DinnerDetails/DinnerDetails';
 
 
 function App() {
@@ -35,9 +35,13 @@ function App() {
           <Route path="/dinner">
             <Dinner></Dinner>
           </Route>
-          <Route path="/BreakfastDetails">
+          <Route  path="/dinner/:foodkey">
+            <DinnerDetails></DinnerDetails>
+          </Route>
+          <Route path="/breakfastDetails/:foodkey">
             <BreakfastDetails></BreakfastDetails>
           </Route>
+          
         </Switch>
       </Router>
       
