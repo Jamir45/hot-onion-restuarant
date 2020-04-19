@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import foodData from '../../foodData/dinner'
+import foodData from '../../foodData/lunch'
 
-const DinnerDetails = () => {
+const LunchDetails = () => {
     const {foodkey} = useParams();
+    console.log(foodkey);
     const foods = foodData.find( allFood => allFood.key === foodkey);
     const {name, details, image, price} = foods;
     const [count, setCount] = useState(1);
@@ -21,7 +22,7 @@ const DinnerDetails = () => {
                             <button className="twoBtn" onClick={ () => setCount(count + 1)}>+</button>
                         </div>
                     </div> 
-                </div>           
+                </div>              
             </div>
             <div className="cardImage">
                 <img src={image} alt=""/>
@@ -30,4 +31,4 @@ const DinnerDetails = () => {
     );
 };
 
-export default DinnerDetails;
+export default LunchDetails;

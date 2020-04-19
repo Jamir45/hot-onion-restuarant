@@ -1,7 +1,9 @@
 .fullCard{
+    margin-top: 30px;
     display: flex;
 }
-.cardDetails{
+.cardDetails {
+    margin-top: 30px;
     width: 50%;
     padding: 10px;
 }
@@ -14,4 +16,22 @@
 .cardImage img {
     width: 100%;
     padding: 20px;
+}
+.priceBtn{
+    display: flex;
+}
+.button {
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.twoBtn {
+    width: 35px;
+    border: none;
+    background: white;
+}
+.btnBox {
+    border: 1px solid lightgray;
+    padding: 3px;
+    border-radius: 13px;
 }

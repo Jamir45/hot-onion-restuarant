@@ -3,7 +3,7 @@ import './BreakfastFood.css'
 import { Link } from 'react-router-dom';
 
 const BreakfastFood = (props) => {
-    const {name, subName, image, price, key} = props.allSingleData
+    const {name, subName, image, price, key} = props.allSingleData;
     return (
             <div className="col-md-4 md-4">
                 <div id="fullCart">
